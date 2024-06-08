@@ -1,0 +1,76 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1717402104144,
+      "tag": "0000_late_cobalt_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1717420782918,
+      "tag": "0001_tiny_firestar",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1717843695529,
+      "tag": "0002_outstanding_deadpool",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1717850063116,
+      "tag": "0003_massive_sabretooth",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1717850295622,
+      "tag": "0004_chunky_black_bolt",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1717855655880,
+      "tag": "0005_purple_mole_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1717858568953,
+      "tag": "0006_tough_sabretooth",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1717858904040,
+      "tag": "0007_closed_swordsman",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1717859697329,
+      "tag": "0008_neat_colossus",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1717867718994,
+      "tag": "0009_regular_jack_power",
+      "breakpoints": true
+    }
+  ]
+}
