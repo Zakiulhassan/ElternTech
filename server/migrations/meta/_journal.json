@@ -71,6 +71,13 @@
       "when": 1717867718994,
       "tag": "0009_regular_jack_power",
       "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1718220025975,
+      "tag": "0010_numerous_speed_demon",
+      "breakpoints": true
     }
   ]
 }

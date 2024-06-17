@@ -6,7 +6,7 @@ import bcrypt from "bcrypt";
 
 import { db } from "..";
 import { eq } from "drizzle-orm";
-import { users } from "../schema";
+import { user } from "../schema";
 import { generateEmailVerificationToken } from "./tokens";
 import { sendVerificationEmail } from "./emails";
 
@@ -17,8 +17,8 @@ export const emailRegister = action(
   async ({ email, password, name }) => {
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const existingUser = await db.query.users.findFirst({
-      where: eq(users.email, email),
+    const existingUser = await db.query.user.findFirst({
+      where: eq(user.email, email),
     });
 
     if (existingUser) {
@@ -34,7 +34,7 @@ export const emailRegister = action(
       return { error: "Email already exists." };
     }
 
-    await db.insert(users).values({
+    await db.insert(user).values({
       id: crypto.randomUUID(),
       name,
       email,

@@ -19,7 +19,7 @@ export const posts = pgTable("posts", {
 
 export const RoleEnum = pgEnum("roles", ["user", "admin"]);
 
-export const users = pgTable("users", {
+export const user = pgTable("user", {
   id: text("id")
     .notNull()
     .primaryKey()
@@ -38,7 +38,7 @@ export const accounts = pgTable(
   {
     userId: text("userId")
       .notNull()
-      .references(() => users.id, { onDelete: "cascade" }),
+      .references(() => user.id, { onDelete: "cascade" }),
     type: text("type").$type<AdapterAccount>().notNull(), // Correct type
     provider: text("provider").notNull(),
     providerAccountId: text("providerAccountId").notNull(),
